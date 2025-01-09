@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02E09E682D2F6CD400C9F14E /* palette.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E09E662D2F6CD400C9F14E /* palette.h */; };
+		02E09E692D2F6CD400C9F14E /* palette.c in Sources */ = {isa = PBXBuildFile; fileRef = 02E09E672D2F6CD400C9F14E /* palette.c */; };
 		3236021C2899930C00C844E7 /* sharpyuv_gamma.c in Sources */ = {isa = PBXBuildFile; fileRef = 323602112899930B00C844E7 /* sharpyuv_gamma.c */; };
 		3236021D2899930C00C844E7 /* sharpyuv_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 323602122899930B00C844E7 /* sharpyuv_sse2.c */; };
 		3236021E2899930C00C844E7 /* sharpyuv.c in Sources */ = {isa = PBXBuildFile; fileRef = 323602132899930B00C844E7 /* sharpyuv.c */; };
@@ -193,6 +195,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02E09E662D2F6CD400C9F14E /* palette.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = palette.h; sourceTree = "<group>"; };
+		02E09E672D2F6CD400C9F14E /* palette.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = palette.c; sourceTree = "<group>"; };
 		323602112899930B00C844E7 /* sharpyuv_gamma.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sharpyuv_gamma.c; sourceTree = "<group>"; };
 		323602122899930B00C844E7 /* sharpyuv_sse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sharpyuv_sse2.c; sourceTree = "<group>"; };
 		323602132899930B00C844E7 /* sharpyuv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sharpyuv.c; sourceTree = "<group>"; };
@@ -479,31 +483,33 @@
 			isa = PBXGroup;
 			children = (
 				804BDF7021356BC000BA3395 /* bit_reader_inl_utils.h */,
-				804BDF7421356BC000BA3395 /* bit_reader_utils.c */,
 				804BDF7121356BC000BA3395 /* bit_reader_utils.h */,
-				804BDF7321356BC000BA3395 /* bit_writer_utils.c */,
+				804BDF7421356BC000BA3395 /* bit_reader_utils.c */,
 				804BDF7721356BC000BA3395 /* bit_writer_utils.h */,
-				804BDF7221356BC000BA3395 /* color_cache_utils.c */,
+				804BDF7321356BC000BA3395 /* bit_writer_utils.c */,
 				804BDF7921356BC000BA3395 /* color_cache_utils.h */,
+				804BDF7221356BC000BA3395 /* color_cache_utils.c */,
 				804BDF7B21356BC000BA3395 /* endian_inl_utils.h */,
-				804BDF8621356BC100BA3395 /* filters_utils.c */,
 				804BDF7621356BC000BA3395 /* filters_utils.h */,
-				804BDF8121356BC000BA3395 /* huffman_encode_utils.c */,
+				804BDF8621356BC100BA3395 /* filters_utils.c */,
 				804BDF8521356BC100BA3395 /* huffman_encode_utils.h */,
-				804BDF7821356BC000BA3395 /* huffman_utils.c */,
+				804BDF8121356BC000BA3395 /* huffman_encode_utils.c */,
 				804BDF7E21356BC000BA3395 /* huffman_utils.h */,
-				804BDF8721356BC100BA3395 /* quant_levels_dec_utils.c */,
+				804BDF7821356BC000BA3395 /* huffman_utils.c */,
+				02E09E662D2F6CD400C9F14E /* palette.h */,
+				02E09E672D2F6CD400C9F14E /* palette.c */,
 				804BDF8921356BC100BA3395 /* quant_levels_dec_utils.h */,
-				804BDF8021356BC000BA3395 /* quant_levels_utils.c */,
+				804BDF8721356BC100BA3395 /* quant_levels_dec_utils.c */,
 				804BDF8221356BC100BA3395 /* quant_levels_utils.h */,
-				804BDF8421356BC100BA3395 /* random_utils.c */,
+				804BDF8021356BC000BA3395 /* quant_levels_utils.c */,
 				804BDF7521356BC000BA3395 /* random_utils.h */,
-				804BDF7A21356BC000BA3395 /* rescaler_utils.c */,
+				804BDF8421356BC100BA3395 /* random_utils.c */,
 				804BDF8321356BC100BA3395 /* rescaler_utils.h */,
-				804BDF7C21356BC000BA3395 /* thread_utils.c */,
+				804BDF7A21356BC000BA3395 /* rescaler_utils.c */,
 				804BDF7F21356BC000BA3395 /* thread_utils.h */,
-				804BDF7D21356BC000BA3395 /* utils.c */,
+				804BDF7C21356BC000BA3395 /* thread_utils.c */,
 				804BDF8821356BC100BA3395 /* utils.h */,
+				804BDF7D21356BC000BA3395 /* utils.c */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -732,6 +738,7 @@
 				804BDF9021356BC100BA3395 /* filters_utils.h in Headers */,
 				804BDF9F21356BC100BA3395 /* huffman_encode_utils.h in Headers */,
 				804BDF9821356BC100BA3395 /* huffman_utils.h in Headers */,
+				02E09E682D2F6CD400C9F14E /* palette.h in Headers */,
 				804BDFEF21356BEC00BA3395 /* vp8li_enc.h in Headers */,
 				804BDFAF21356BCC00BA3395 /* decode.h in Headers */,
 				804BE0A221356C2600BA3395 /* vp8_dec.h in Headers */,
@@ -951,6 +958,7 @@
 				804BDFEA21356BEC00BA3395 /* token_enc.c in Sources */,
 				329409842A7105C700F6BA45 /* sharpyuv_cpu.c in Sources */,
 				804BDFF921356BEC00BA3395 /* iterator_enc.c in Sources */,
+				02E09E692D2F6CD400C9F14E /* palette.c in Sources */,
 				804BDFE921356BEC00BA3395 /* predictor_enc.c in Sources */,
 				804BE05B21356C0A00BA3395 /* lossless.c in Sources */,
 			);
@@ -1137,6 +1145,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Xcode/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1159,6 +1168,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Xcode/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
